@@ -1,0 +1,60 @@
+[0.825s] Invoking command in '/home/udezumo/Sirius_ear/src/path_listener': PYTHONPATH=/home/udezumo/Sirius_ear/build/path_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_listener build --build-base /home/udezumo/Sirius_ear/build/path_listener/build install --record /home/udezumo/Sirius_ear/build/path_listener/install.log --single-version-externally-managed install_data
+[0.990s] running egg_info
+[0.990s] creating ../../build/path_listener/path_listener.egg-info
+[0.991s] writing ../../build/path_listener/path_listener.egg-info/PKG-INFO
+[0.991s] writing dependency_links to ../../build/path_listener/path_listener.egg-info/dependency_links.txt
+[0.991s] writing entry points to ../../build/path_listener/path_listener.egg-info/entry_points.txt
+[0.991s] writing requirements to ../../build/path_listener/path_listener.egg-info/requires.txt
+[0.991s] writing top-level names to ../../build/path_listener/path_listener.egg-info/top_level.txt
+[0.992s] writing manifest file '../../build/path_listener/path_listener.egg-info/SOURCES.txt'
+[0.993s] reading manifest file '../../build/path_listener/path_listener.egg-info/SOURCES.txt'
+[0.994s] writing manifest file '../../build/path_listener/path_listener.egg-info/SOURCES.txt'
+[0.994s] running build
+[0.994s] running build_py
+[0.994s] creating /home/udezumo/Sirius_ear/build/path_listener/build
+[0.994s] creating /home/udezumo/Sirius_ear/build/path_listener/build/lib
+[0.994s] creating /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener
+[0.994s] copying path_listener/__init__.py -> /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener
+[0.994s] copying path_listener/path_listener_node.py -> /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener
+[0.996s] copying path_listener/ver-mid_deg.py -> /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener
+[0.997s] copying path_listener/trash.py -> /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener
+[0.997s] copying path_listener/ver-local_global.py -> /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener
+[0.997s] copying path_listener/ver-start_end_Int.py -> /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener
+[0.997s] copying path_listener/ver_local_tf.py -> /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener
+[0.997s] copying path_listener/ver-csv.py -> /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener
+[0.997s] running install
+[0.998s] running install_lib
+[0.998s] creating /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener
+[0.998s] copying /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener/__init__.py -> /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener
+[0.999s] copying /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener/path_listener_node.py -> /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener
+[0.999s] copying /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener/ver-mid_deg.py -> /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener
+[0.999s] copying /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener/trash.py -> /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener
+[0.999s] copying /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener/ver-local_global.py -> /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener
+[0.999s] copying /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener/ver-start_end_Int.py -> /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener
+[0.999s] copying /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener/ver_local_tf.py -> /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener
+[1.000s]   File "/home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener/path_listener_node.py", line 88
+[1.000s]     /miura_ws$ ros2 topic list
+[1.000s]     ^
+[1.000s] SyntaxError: invalid syntax
+[1.000s] 
+[1.001s] copying /home/udezumo/Sirius_ear/build/path_listener/build/lib/path_listener/ver-csv.py -> /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener
+[1.001s] byte-compiling /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener/__init__.py to __init__.cpython-310.pyc
+[1.001s] byte-compiling /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener/path_listener_node.py to path_listener_node.cpython-310.pyc
+[1.001s] byte-compiling /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener/ver-mid_deg.py to ver-mid_deg.cpython-310.pyc
+[1.001s] byte-compiling /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener/trash.py to trash.cpython-310.pyc
+[1.001s] byte-compiling /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener/ver-local_global.py to ver-local_global.cpython-310.pyc
+[1.001s] byte-compiling /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener/ver-start_end_Int.py to ver-start_end_Int.cpython-310.pyc
+[1.002s] byte-compiling /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener/ver_local_tf.py to ver_local_tf.cpython-310.pyc
+[1.002s] byte-compiling /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener/ver-csv.py to ver-csv.cpython-310.pyc
+[1.002s] running install_data
+[1.003s] creating /home/udezumo/Sirius_ear/install/path_listener/share/ament_index
+[1.003s] creating /home/udezumo/Sirius_ear/install/path_listener/share/ament_index/resource_index
+[1.003s] creating /home/udezumo/Sirius_ear/install/path_listener/share/ament_index/resource_index/packages
+[1.003s] copying resource/path_listener -> /home/udezumo/Sirius_ear/install/path_listener/share/ament_index/resource_index/packages
+[1.003s] copying package.xml -> /home/udezumo/Sirius_ear/install/path_listener/share/path_listener
+[1.003s] running install_egg_info
+[1.004s] Copying ../../build/path_listener/path_listener.egg-info to /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener-0.0.0-py3.10.egg-info
+[1.004s] running install_scripts
+[1.019s] Installing path_listener_node script to /home/udezumo/Sirius_ear/install/path_listener/lib/path_listener
+[1.019s] writing list of installed files to '/home/udezumo/Sirius_ear/build/path_listener/install.log'
+[1.055s] Invoked command in '/home/udezumo/Sirius_ear/src/path_listener' returned '0': PYTHONPATH=/home/udezumo/Sirius_ear/build/path_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_listener build --build-base /home/udezumo/Sirius_ear/build/path_listener/build install --record /home/udezumo/Sirius_ear/build/path_listener/install.log --single-version-externally-managed install_data

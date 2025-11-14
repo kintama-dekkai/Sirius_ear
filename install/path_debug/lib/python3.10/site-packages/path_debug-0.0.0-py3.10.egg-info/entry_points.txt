@@ -1,0 +1,3 @@
+[console_scripts]
+path_debug_node = path_debug.path_debug_node:main
+

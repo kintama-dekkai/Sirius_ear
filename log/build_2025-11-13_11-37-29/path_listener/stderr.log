@@ -1,0 +1,5 @@
+  File "/home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener/path_listener_node.py", line 88
+    /miura_ws$ ros2 topic list
+    ^
+SyntaxError: invalid syntax
+

@@ -1,0 +1,6 @@
+source;share/bluetooth/hook/pythonpath.ps1
+source;share/bluetooth/hook/pythonpath.dsv
+source;share/bluetooth/hook/pythonpath.sh
+source;share/bluetooth/hook/ament_prefix_path.ps1
+source;share/bluetooth/hook/ament_prefix_path.dsv
+source;share/bluetooth/hook/ament_prefix_path.sh

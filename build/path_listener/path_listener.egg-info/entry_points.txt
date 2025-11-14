@@ -1,0 +1,3 @@
+[console_scripts]
+path_listener_node = path_listener.path_listener_node:main
+

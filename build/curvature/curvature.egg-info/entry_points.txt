@@ -1,0 +1,3 @@
+[console_scripts]
+curvature_node = curvature.curvature_node:main
+

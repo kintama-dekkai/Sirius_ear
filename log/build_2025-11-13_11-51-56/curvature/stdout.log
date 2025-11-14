@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/curvature/curvature.egg-info
+writing ../../build/curvature/curvature.egg-info/PKG-INFO
+writing dependency_links to ../../build/curvature/curvature.egg-info/dependency_links.txt
+writing entry points to ../../build/curvature/curvature.egg-info/entry_points.txt
+writing requirements to ../../build/curvature/curvature.egg-info/requires.txt
+writing top-level names to ../../build/curvature/curvature.egg-info/top_level.txt
+writing manifest file '../../build/curvature/curvature.egg-info/SOURCES.txt'
+reading manifest file '../../build/curvature/curvature.egg-info/SOURCES.txt'
+writing manifest file '../../build/curvature/curvature.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/udezumo/Sirius_ear/build/curvature/build
+creating /home/udezumo/Sirius_ear/build/curvature/build/lib
+creating /home/udezumo/Sirius_ear/build/curvature/build/lib/curvature
+copying curvature/__init__.py -> /home/udezumo/Sirius_ear/build/curvature/build/lib/curvature
+copying curvature/curvature_node.py -> /home/udezumo/Sirius_ear/build/curvature/build/lib/curvature
+running install
+running install_lib
+creating /home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages/curvature
+copying /home/udezumo/Sirius_ear/build/curvature/build/lib/curvature/__init__.py -> /home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages/curvature
+copying /home/udezumo/Sirius_ear/build/curvature/build/lib/curvature/curvature_node.py -> /home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages/curvature
+byte-compiling /home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages/curvature/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages/curvature/curvature_node.py to curvature_node.cpython-310.pyc
+running install_data
+creating /home/udezumo/Sirius_ear/install/curvature/share/ament_index
+creating /home/udezumo/Sirius_ear/install/curvature/share/ament_index/resource_index
+creating /home/udezumo/Sirius_ear/install/curvature/share/ament_index/resource_index/packages
+copying resource/curvature -> /home/udezumo/Sirius_ear/install/curvature/share/ament_index/resource_index/packages
+copying package.xml -> /home/udezumo/Sirius_ear/install/curvature/share/curvature
+running install_egg_info
+Copying ../../build/curvature/curvature.egg-info to /home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages/curvature-0.0.0-py3.10.egg-info
+running install_scripts
+Installing curvature_node script to /home/udezumo/Sirius_ear/install/curvature/lib/curvature
+writing list of installed files to '/home/udezumo/Sirius_ear/build/curvature/install.log'

@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/bluetooth/bluetooth.egg-info/PKG-INFO
+../../build/bluetooth/bluetooth.egg-info/SOURCES.txt
+../../build/bluetooth/bluetooth.egg-info/dependency_links.txt
+../../build/bluetooth/bluetooth.egg-info/entry_points.txt
+../../build/bluetooth/bluetooth.egg-info/requires.txt
+../../build/bluetooth/bluetooth.egg-info/top_level.txt
+../../build/bluetooth/bluetooth.egg-info/zip-safe
+bluetooth/__init__.py
+bluetooth/bluetooth_node.py
+bluetooth/gpt_node.py
+resource/bluetooth
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

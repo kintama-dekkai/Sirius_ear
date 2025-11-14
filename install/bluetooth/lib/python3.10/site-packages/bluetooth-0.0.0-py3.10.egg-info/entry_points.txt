@@ -1,0 +1,3 @@
+[console_scripts]
+bluetooth_node = bluetooth.bluetooth_node:main
+
