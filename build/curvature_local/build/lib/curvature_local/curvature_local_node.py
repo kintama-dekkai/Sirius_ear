@@ -5,51 +5,55 @@ from nav_msgs.msg import Path
 from std_msgs.msg import String
 
 
-
-
 class Curvature_local(Node):
    def __init__(self):
        super().__init__('Curvature_local')
        self.sub1 = self.create_subscription(Path ,'/local_plan',self.local_plan_cb,10)
        self.turn_signal_pub = self.create_publisher(String,'/blinker_led_command',10)
 
-       self.get_logger().info('turnsignal, curvature')
+       self.get_logger().info('turnsignal, curvature, len')
 
 
+   def curvature_from_three_points(self,pose_stamped):
+      max_area = 0.0
+      k = 0
+      cross = 0
+      (x1,y1) = pose_stamped[0].pose.position.x, pose_stamped[0].pose.position.y
+      (x3,y3) = pose_stamped[-1].pose.position.x, pose_stamped[-1].pose.position.y
 
-
-   def curvature_from_three_points(self,p1, p2, p3):
-       (x1,y1),(x2,y2),(x3,y3) = p1,p2,p3
-       a = math.hypot(x2-x1, y2-y1)
-       b = math.hypot(x3-x2, y3-y2)
-       c = math.hypot(x3-x1, y3-y1)
-       # area by shoelace
-       area = 0.5 * abs(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2))
-       if area == 0 or a*b*c == 0:
-           return 0.0  # 直線(または重複点)は曲率0
-       R = (a*b*c) / (4.0 * area)
-       k = 1.0 / R
-       # sign from cross product of vectors (p2-p1) x (p3-p2)
-       v1x, v1y = x2 - x1, y2 - y1
-       v2x, v2y = x3 - x2, y3 - y2
-       cross = v1x * v2y - v1y * v2x
-       return math.copysign(k, cross)
+      for i in range(len(pose_stamped) - 2):
+         (x2,y2) = pose_stamped[i+1].pose.position.x, pose_stamped[i+1].pose.position.y
+         pose_stamped[i+1], pose_stamped[-1]
+         area = 0.5 * abs(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2))
+         if area > max_area:
+            a = math.hypot(x2-x1, y2-y1)
+            b = math.hypot(x3-x2, y3-y2)
+            c = math.hypot(x3-x1, y3-y1)
+            R = (a*b*c) / (4.0 * area)
+            k = 1.0 / R
+            # sign from cross product of vectors (p2-p1) x (p3-p2)
+            v1x, v1y = x2 - x1, y2 - y1
+            v2x, v2y = x3 - x2, y3 - y2
+            cross = v1x * v2y - v1y * v2x
+            if k == 0:
+               continue
+      return math.copysign(k, cross)
 
 
    def local_plan_cb(self,msg:Path):
-       if len(msg.poses) < 3:
+        if len(msg.poses) < 3:
            return
-       points = [(p.pose.position.x, p.pose.position.y) for p in msg.poses]
-       k = self.curvature_from_three_points(points[0], points[1], points[2])
-       turn_signal = String()
-       if k > 0.01:
-           turn_signal.data = 'RIGHT'
-       elif k < -0.01:
-           turn_signal.data = 'LEFT'
-       else:
-           turn_signal.data = 'OFF'
-       self.turn_signal_pub.publish(turn_signal)
-       self.get_logger().info(f'{turn_signal.data}, {k}')
+        pose_stamped = msg.poses
+        k = self.curvature_from_three_points(pose_stamped)
+        turn_signal = String()
+        if k > 0.1:
+           turn_signal.data = 'left'
+        elif k < -0.1:
+           turn_signal.data = 'right '
+        else:
+           turn_signal.data = 'straight'
+        self.turn_signal_pub.publish(turn_signal)
+        self.get_logger().info(f'{turn_signal.data}, {k}, {len(msg.poses)}')
 
 
 def main(args=None):

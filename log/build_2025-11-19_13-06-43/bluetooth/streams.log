@@ -1,0 +1,21 @@
+[2.596s] Invoking command in '/home/udezumo/Sirius_ear/src/bluetooth': PYTHONPATH=/home/udezumo/Sirius_ear/build/bluetooth/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/bluetooth/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bluetooth build --build-base /home/udezumo/Sirius_ear/build/bluetooth/build install --record /home/udezumo/Sirius_ear/build/bluetooth/install.log --single-version-externally-managed install_data
+[3.314s] running egg_info
+[3.323s] writing ../../build/bluetooth/bluetooth.egg-info/PKG-INFO
+[3.329s] writing dependency_links to ../../build/bluetooth/bluetooth.egg-info/dependency_links.txt
+[3.329s] writing entry points to ../../build/bluetooth/bluetooth.egg-info/entry_points.txt
+[3.329s] writing requirements to ../../build/bluetooth/bluetooth.egg-info/requires.txt
+[3.329s] writing top-level names to ../../build/bluetooth/bluetooth.egg-info/top_level.txt
+[3.332s] reading manifest file '../../build/bluetooth/bluetooth.egg-info/SOURCES.txt'
+[3.334s] writing manifest file '../../build/bluetooth/bluetooth.egg-info/SOURCES.txt'
+[3.335s] running build
+[3.335s] running build_py
+[3.338s] running install
+[3.339s] running install_lib
+[3.342s] running install_data
+[3.342s] running install_egg_info
+[3.349s] removing '/home/udezumo/Sirius_ear/install/bluetooth/lib/python3.10/site-packages/bluetooth-0.0.0-py3.10.egg-info' (and everything under it)
+[3.349s] Copying ../../build/bluetooth/bluetooth.egg-info to /home/udezumo/Sirius_ear/install/bluetooth/lib/python3.10/site-packages/bluetooth-0.0.0-py3.10.egg-info
+[3.350s] running install_scripts
+[3.422s] Installing bluetooth_node script to /home/udezumo/Sirius_ear/install/bluetooth/lib/bluetooth
+[3.423s] writing list of installed files to '/home/udezumo/Sirius_ear/build/bluetooth/install.log'
+[3.605s] Invoked command in '/home/udezumo/Sirius_ear/src/bluetooth' returned '0': PYTHONPATH=/home/udezumo/Sirius_ear/build/bluetooth/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/bluetooth/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bluetooth build --build-base /home/udezumo/Sirius_ear/build/bluetooth/build install --record /home/udezumo/Sirius_ear/build/bluetooth/install.log --single-version-externally-managed install_data

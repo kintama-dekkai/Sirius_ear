@@ -1,0 +1,327 @@
+[0.179s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.179s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7953d5664880>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7953d55edf30>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7953d55edf30>>, mixin_verb=('build',))
+[0.490s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.491s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.491s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.491s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.491s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.491s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.491s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/udezumo/Sirius_ear'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth) by extensions ['ignore', 'ignore_ament_install']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth) by extension 'ignore'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth) by extension 'ignore_ament_install'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth) by extensions ['colcon_pkg']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth) by extension 'colcon_pkg'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth) by extensions ['colcon_meta']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth) by extension 'colcon_meta'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth) by extensions ['ros']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluetooth) by extension 'ros'
+[0.516s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bluetooth' with type 'ros.ament_python' and name 'bluetooth'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature) by extensions ['ignore', 'ignore_ament_install']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature) by extension 'ignore'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature) by extension 'ignore_ament_install'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature) by extensions ['colcon_pkg']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature) by extension 'colcon_pkg'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature) by extensions ['colcon_meta']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature) by extension 'colcon_meta'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature) by extensions ['ros']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature) by extension 'ros'
+[0.548s] DEBUG:colcon.colcon_core.package_identification:Package 'src/curvature' with type 'ros.ament_python' and name 'curvature'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature_local) by extensions ['ignore', 'ignore_ament_install']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature_local) by extension 'ignore'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature_local) by extension 'ignore_ament_install'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature_local) by extensions ['colcon_pkg']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature_local) by extension 'colcon_pkg'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature_local) by extensions ['colcon_meta']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature_local) by extension 'colcon_meta'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature_local) by extensions ['ros']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/curvature_local) by extension 'ros'
+[0.551s] DEBUG:colcon.colcon_core.package_identification:Package 'src/curvature_local' with type 'ros.ament_python' and name 'curvature_local'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_debug) by extensions ['ignore', 'ignore_ament_install']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_debug) by extension 'ignore'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_debug) by extension 'ignore_ament_install'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_debug) by extensions ['colcon_pkg']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_debug) by extension 'colcon_pkg'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_debug) by extensions ['colcon_meta']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_debug) by extension 'colcon_meta'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_debug) by extensions ['ros']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_debug) by extension 'ros'
+[0.553s] DEBUG:colcon.colcon_core.package_identification:Package 'src/path_debug' with type 'ros.ament_python' and name 'path_debug'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_listener) by extensions ['ignore', 'ignore_ament_install']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_listener) by extension 'ignore'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_listener) by extension 'ignore_ament_install'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_listener) by extensions ['colcon_pkg']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_listener) by extension 'colcon_pkg'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_listener) by extensions ['colcon_meta']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_listener) by extension 'colcon_meta'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_listener) by extensions ['ros']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_listener) by extension 'ros'
+[0.556s] DEBUG:colcon.colcon_core.package_identification:Package 'src/path_listener' with type 'ros.ament_python' and name 'path_listener'
+[0.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.596s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.596s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.599s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/udezumo/Sirius_ear/install
+[0.600s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 439 installed packages in /opt/ros/humble
+[0.604s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'bluetooth' build argument 'cmake_args' from command line to 'None'
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'bluetooth' build argument 'cmake_target' from command line to 'None'
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'bluetooth' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'bluetooth' build argument 'cmake_clean_cache' from command line to 'False'
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'bluetooth' build argument 'cmake_clean_first' from command line to 'False'
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'bluetooth' build argument 'cmake_force_configure' from command line to 'False'
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'bluetooth' build argument 'ament_cmake_args' from command line to 'None'
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'bluetooth' build argument 'catkin_cmake_args' from command line to 'None'
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'bluetooth' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.671s] DEBUG:colcon.colcon_core.verb:Building package 'bluetooth' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/udezumo/Sirius_ear/build/bluetooth', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/udezumo/Sirius_ear/install/bluetooth', 'merge_install': False, 'path': '/home/udezumo/Sirius_ear/src/bluetooth', 'symlink_install': False, 'test_result_base': None}
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature' build argument 'cmake_args' from command line to 'None'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature' build argument 'cmake_target' from command line to 'None'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature' build argument 'cmake_clean_cache' from command line to 'False'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature' build argument 'cmake_clean_first' from command line to 'False'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature' build argument 'cmake_force_configure' from command line to 'False'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature' build argument 'ament_cmake_args' from command line to 'None'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature' build argument 'catkin_cmake_args' from command line to 'None'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.672s] DEBUG:colcon.colcon_core.verb:Building package 'curvature' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/udezumo/Sirius_ear/build/curvature', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/udezumo/Sirius_ear/install/curvature', 'merge_install': False, 'path': '/home/udezumo/Sirius_ear/src/curvature', 'symlink_install': False, 'test_result_base': None}
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature_local' build argument 'cmake_args' from command line to 'None'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature_local' build argument 'cmake_target' from command line to 'None'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature_local' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature_local' build argument 'cmake_clean_cache' from command line to 'False'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature_local' build argument 'cmake_clean_first' from command line to 'False'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature_local' build argument 'cmake_force_configure' from command line to 'False'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature_local' build argument 'ament_cmake_args' from command line to 'None'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature_local' build argument 'catkin_cmake_args' from command line to 'None'
+[0.672s] Level 5:colcon.colcon_core.verb:set package 'curvature_local' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.672s] DEBUG:colcon.colcon_core.verb:Building package 'curvature_local' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/udezumo/Sirius_ear/build/curvature_local', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/udezumo/Sirius_ear/install/curvature_local', 'merge_install': False, 'path': '/home/udezumo/Sirius_ear/src/curvature_local', 'symlink_install': False, 'test_result_base': None}
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_debug' build argument 'cmake_args' from command line to 'None'
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_debug' build argument 'cmake_target' from command line to 'None'
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_debug' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_debug' build argument 'cmake_clean_cache' from command line to 'False'
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_debug' build argument 'cmake_clean_first' from command line to 'False'
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_debug' build argument 'cmake_force_configure' from command line to 'False'
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_debug' build argument 'ament_cmake_args' from command line to 'None'
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_debug' build argument 'catkin_cmake_args' from command line to 'None'
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_debug' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.673s] DEBUG:colcon.colcon_core.verb:Building package 'path_debug' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/udezumo/Sirius_ear/build/path_debug', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/udezumo/Sirius_ear/install/path_debug', 'merge_install': False, 'path': '/home/udezumo/Sirius_ear/src/path_debug', 'symlink_install': False, 'test_result_base': None}
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_listener' build argument 'cmake_args' from command line to 'None'
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_listener' build argument 'cmake_target' from command line to 'None'
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_listener' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_listener' build argument 'cmake_clean_cache' from command line to 'False'
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_listener' build argument 'cmake_clean_first' from command line to 'False'
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_listener' build argument 'cmake_force_configure' from command line to 'False'
+[0.673s] Level 5:colcon.colcon_core.verb:set package 'path_listener' build argument 'ament_cmake_args' from command line to 'None'
+[0.674s] Level 5:colcon.colcon_core.verb:set package 'path_listener' build argument 'catkin_cmake_args' from command line to 'None'
+[0.674s] Level 5:colcon.colcon_core.verb:set package 'path_listener' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.674s] DEBUG:colcon.colcon_core.verb:Building package 'path_listener' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/udezumo/Sirius_ear/build/path_listener', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/udezumo/Sirius_ear/install/path_listener', 'merge_install': False, 'path': '/home/udezumo/Sirius_ear/src/path_listener', 'symlink_install': False, 'test_result_base': None}
+[0.674s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.675s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.676s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/udezumo/Sirius_ear/src/bluetooth' with build type 'ament_python'
+[0.676s] Level 1:colcon.colcon_core.shell:create_environment_hook('bluetooth', 'ament_prefix_path')
+[0.679s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/bluetooth/share/bluetooth/hook/ament_prefix_path.ps1'
+[0.680s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/udezumo/Sirius_ear/install/bluetooth/share/bluetooth/hook/ament_prefix_path.dsv'
+[0.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/bluetooth/share/bluetooth/hook/ament_prefix_path.sh'
+[0.681s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.681s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.687s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/udezumo/Sirius_ear/src/curvature' with build type 'ament_python'
+[0.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('curvature', 'ament_prefix_path')
+[0.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/curvature/share/curvature/hook/ament_prefix_path.ps1'
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/udezumo/Sirius_ear/install/curvature/share/curvature/hook/ament_prefix_path.dsv'
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/curvature/share/curvature/hook/ament_prefix_path.sh'
+[0.692s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.692s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.697s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/udezumo/Sirius_ear/src/curvature_local' with build type 'ament_python'
+[0.697s] Level 1:colcon.colcon_core.shell:create_environment_hook('curvature_local', 'ament_prefix_path')
+[0.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/curvature_local/share/curvature_local/hook/ament_prefix_path.ps1'
+[0.699s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/udezumo/Sirius_ear/install/curvature_local/share/curvature_local/hook/ament_prefix_path.dsv'
+[0.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/curvature_local/share/curvature_local/hook/ament_prefix_path.sh'
+[0.700s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.700s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.706s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/udezumo/Sirius_ear/src/path_debug' with build type 'ament_python'
+[0.708s] Level 1:colcon.colcon_core.shell:create_environment_hook('path_debug', 'ament_prefix_path')
+[0.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/path_debug/share/path_debug/hook/ament_prefix_path.ps1'
+[0.710s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/udezumo/Sirius_ear/install/path_debug/share/path_debug/hook/ament_prefix_path.dsv'
+[0.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/path_debug/share/path_debug/hook/ament_prefix_path.sh'
+[0.711s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.711s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.714s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/udezumo/Sirius_ear/src/path_listener' with build type 'ament_python'
+[0.714s] Level 1:colcon.colcon_core.shell:create_environment_hook('path_listener', 'ament_prefix_path')
+[0.715s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/path_listener/share/path_listener/hook/ament_prefix_path.ps1'
+[0.718s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/udezumo/Sirius_ear/install/path_listener/share/path_listener/hook/ament_prefix_path.dsv'
+[0.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/path_listener/share/path_listener/hook/ament_prefix_path.sh'
+[0.719s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.720s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.164s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/udezumo/Sirius_ear/src/bluetooth'
+[1.164s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.165s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.555s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/udezumo/Sirius_ear/src/curvature'
+[1.557s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.557s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.946s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/udezumo/Sirius_ear/src/curvature_local'
+[1.947s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.948s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.356s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/udezumo/Sirius_ear/src/path_debug'
+[2.356s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.357s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.719s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/udezumo/Sirius_ear/src/path_listener'
+[2.721s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.721s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.770s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/udezumo/Sirius_ear/src/curvature': PYTHONPATH=/home/udezumo/Sirius_ear/build/curvature/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/curvature build --build-base /home/udezumo/Sirius_ear/build/curvature/build install --record /home/udezumo/Sirius_ear/build/curvature/install.log --single-version-externally-managed install_data
+[3.805s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/udezumo/Sirius_ear/src/path_listener': PYTHONPATH=/home/udezumo/Sirius_ear/build/path_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_listener build --build-base /home/udezumo/Sirius_ear/build/path_listener/build install --record /home/udezumo/Sirius_ear/build/path_listener/install.log --single-version-externally-managed install_data
+[3.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/udezumo/Sirius_ear/src/path_debug': PYTHONPATH=/home/udezumo/Sirius_ear/build/path_debug/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/path_debug/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_debug build --build-base /home/udezumo/Sirius_ear/build/path_debug/build install --record /home/udezumo/Sirius_ear/build/path_debug/install.log --single-version-externally-managed install_data
+[3.840s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/udezumo/Sirius_ear/src/bluetooth': PYTHONPATH=/home/udezumo/Sirius_ear/build/bluetooth/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/bluetooth/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bluetooth build --build-base /home/udezumo/Sirius_ear/build/bluetooth/build install --record /home/udezumo/Sirius_ear/build/bluetooth/install.log --single-version-externally-managed install_data
+[3.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/udezumo/Sirius_ear/src/curvature_local': PYTHONPATH=/home/udezumo/Sirius_ear/build/curvature_local/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/curvature_local/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/curvature_local build --build-base /home/udezumo/Sirius_ear/build/curvature_local/build install --record /home/udezumo/Sirius_ear/build/curvature_local/install.log --single-version-externally-managed install_data
+[4.555s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/udezumo/Sirius_ear/src/path_listener' returned '0': PYTHONPATH=/home/udezumo/Sirius_ear/build/path_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_listener build --build-base /home/udezumo/Sirius_ear/build/path_listener/build install --record /home/udezumo/Sirius_ear/build/path_listener/install.log --single-version-externally-managed install_data
+[4.580s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/path_listener' for CMake module files
+[4.582s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/path_listener' for CMake config files
+[4.585s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/path_listener/lib'
+[4.586s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/path_listener/bin'
+[4.586s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/path_listener/lib/pkgconfig/path_listener.pc'
+[4.587s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages'
+[4.588s] Level 1:colcon.colcon_core.shell:create_environment_hook('path_listener', 'pythonpath')
+[4.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/path_listener/share/path_listener/hook/pythonpath.ps1'
+[4.595s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/udezumo/Sirius_ear/install/path_listener/share/path_listener/hook/pythonpath.dsv'
+[4.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/path_listener/share/path_listener/hook/pythonpath.sh'
+[4.603s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/path_listener/bin'
+[4.604s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(path_listener)
+[4.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/path_listener/share/path_listener/package.ps1'
+[4.610s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/udezumo/Sirius_ear/install/path_listener/share/path_listener/package.dsv'
+[4.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/path_listener/share/path_listener/package.sh'
+[4.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/path_listener/share/path_listener/package.bash'
+[4.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/path_listener/share/path_listener/package.zsh'
+[4.632s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/udezumo/Sirius_ear/install/path_listener/share/colcon-core/packages/path_listener)
+[4.638s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/curvature' for CMake module files
+[4.642s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/curvature' for CMake config files
+[4.643s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/udezumo/Sirius_ear/src/curvature' returned '0': PYTHONPATH=/home/udezumo/Sirius_ear/build/curvature/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/curvature build --build-base /home/udezumo/Sirius_ear/build/curvature/build install --record /home/udezumo/Sirius_ear/build/curvature/install.log --single-version-externally-managed install_data
+[4.646s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/curvature/lib'
+[4.647s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/curvature/bin'
+[4.647s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/curvature/lib/pkgconfig/curvature.pc'
+[4.648s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages'
+[4.648s] Level 1:colcon.colcon_core.shell:create_environment_hook('curvature', 'pythonpath')
+[4.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/curvature/share/curvature/hook/pythonpath.ps1'
+[4.652s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/udezumo/Sirius_ear/install/curvature/share/curvature/hook/pythonpath.dsv'
+[4.655s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/curvature/share/curvature/hook/pythonpath.sh'
+[4.658s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/curvature/bin'
+[4.658s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(curvature)
+[4.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/curvature/share/curvature/package.ps1'
+[4.664s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/udezumo/Sirius_ear/install/curvature/share/curvature/package.dsv'
+[4.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/curvature/share/curvature/package.sh'
+[4.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/curvature/share/curvature/package.bash'
+[4.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/curvature/share/curvature/package.zsh'
+[4.670s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/udezumo/Sirius_ear/install/curvature/share/colcon-core/packages/curvature)
+[4.672s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/path_debug' for CMake module files
+[4.673s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/path_debug' for CMake config files
+[4.673s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/udezumo/Sirius_ear/src/path_debug' returned '0': PYTHONPATH=/home/udezumo/Sirius_ear/build/path_debug/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/path_debug/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_debug build --build-base /home/udezumo/Sirius_ear/build/path_debug/build install --record /home/udezumo/Sirius_ear/build/path_debug/install.log --single-version-externally-managed install_data
+[4.675s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/path_debug/lib'
+[4.680s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/path_debug/bin'
+[4.680s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/path_debug/lib/pkgconfig/path_debug.pc'
+[4.681s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/path_debug/lib/python3.10/site-packages'
+[4.681s] Level 1:colcon.colcon_core.shell:create_environment_hook('path_debug', 'pythonpath')
+[4.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/path_debug/share/path_debug/hook/pythonpath.ps1'
+[4.684s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/udezumo/Sirius_ear/install/path_debug/share/path_debug/hook/pythonpath.dsv'
+[4.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/path_debug/share/path_debug/hook/pythonpath.sh'
+[4.692s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/path_debug/bin'
+[4.692s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(path_debug)
+[4.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/path_debug/share/path_debug/package.ps1'
+[4.696s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/udezumo/Sirius_ear/install/path_debug/share/path_debug/package.dsv'
+[4.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/path_debug/share/path_debug/package.sh'
+[4.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/path_debug/share/path_debug/package.bash'
+[4.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/path_debug/share/path_debug/package.zsh'
+[4.711s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/udezumo/Sirius_ear/install/path_debug/share/colcon-core/packages/path_debug)
+[4.714s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/bluetooth' for CMake module files
+[4.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/udezumo/Sirius_ear/src/bluetooth' returned '0': PYTHONPATH=/home/udezumo/Sirius_ear/build/bluetooth/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/bluetooth/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bluetooth build --build-base /home/udezumo/Sirius_ear/build/bluetooth/build install --record /home/udezumo/Sirius_ear/build/bluetooth/install.log --single-version-externally-managed install_data
+[4.719s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/bluetooth' for CMake config files
+[4.720s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/bluetooth/lib'
+[4.721s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/bluetooth/bin'
+[4.721s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/bluetooth/lib/pkgconfig/bluetooth.pc'
+[4.721s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/bluetooth/lib/python3.10/site-packages'
+[4.722s] Level 1:colcon.colcon_core.shell:create_environment_hook('bluetooth', 'pythonpath')
+[4.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/bluetooth/share/bluetooth/hook/pythonpath.ps1'
+[4.725s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/udezumo/Sirius_ear/install/bluetooth/share/bluetooth/hook/pythonpath.dsv'
+[4.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/bluetooth/share/bluetooth/hook/pythonpath.sh'
+[4.728s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/bluetooth/bin'
+[4.728s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bluetooth)
+[4.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/bluetooth/share/bluetooth/package.ps1'
+[4.732s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/udezumo/Sirius_ear/install/bluetooth/share/bluetooth/package.dsv'
+[4.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/bluetooth/share/bluetooth/package.sh'
+[4.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/bluetooth/share/bluetooth/package.bash'
+[4.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/bluetooth/share/bluetooth/package.zsh'
+[4.740s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/udezumo/Sirius_ear/install/bluetooth/share/colcon-core/packages/bluetooth)
+[4.743s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/curvature_local' for CMake module files
+[4.744s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/curvature_local' for CMake config files
+[4.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/udezumo/Sirius_ear/src/curvature_local' returned '0': PYTHONPATH=/home/udezumo/Sirius_ear/build/curvature_local/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/curvature_local/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/curvature_local build --build-base /home/udezumo/Sirius_ear/build/curvature_local/build install --record /home/udezumo/Sirius_ear/build/curvature_local/install.log --single-version-externally-managed install_data
+[4.747s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/curvature_local/lib'
+[4.748s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/curvature_local/bin'
+[4.748s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/curvature_local/lib/pkgconfig/curvature_local.pc'
+[4.748s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/curvature_local/lib/python3.10/site-packages'
+[4.748s] Level 1:colcon.colcon_core.shell:create_environment_hook('curvature_local', 'pythonpath')
+[4.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/curvature_local/share/curvature_local/hook/pythonpath.ps1'
+[4.752s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/udezumo/Sirius_ear/install/curvature_local/share/curvature_local/hook/pythonpath.dsv'
+[4.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/udezumo/Sirius_ear/install/curvature_local/share/curvature_local/hook/pythonpath.sh'
+[4.755s] Level 1:colcon.colcon_core.environment:checking '/home/udezumo/Sirius_ear/install/curvature_local/bin'
+[4.756s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(curvature_local)
+[4.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/curvature_local/share/curvature_local/package.ps1'
+[4.759s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/udezumo/Sirius_ear/install/curvature_local/share/curvature_local/package.dsv'
+[4.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/curvature_local/share/curvature_local/package.sh'
+[4.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/curvature_local/share/curvature_local/package.bash'
+[4.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/udezumo/Sirius_ear/install/curvature_local/share/curvature_local/package.zsh'
+[4.776s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/udezumo/Sirius_ear/install/curvature_local/share/colcon-core/packages/curvature_local)
+[4.778s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.779s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.779s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.779s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.796s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.797s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.797s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.837s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.838s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/udezumo/Sirius_ear/install/local_setup.ps1'
+[4.839s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/udezumo/Sirius_ear/install/_local_setup_util_ps1.py'
+[4.841s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/udezumo/Sirius_ear/install/setup.ps1'
+[4.842s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/udezumo/Sirius_ear/install/local_setup.sh'
+[4.843s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/udezumo/Sirius_ear/install/_local_setup_util_sh.py'
+[4.844s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/udezumo/Sirius_ear/install/setup.sh'
+[4.847s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/udezumo/Sirius_ear/install/local_setup.bash'
+[4.848s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/udezumo/Sirius_ear/install/setup.bash'
+[4.851s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/udezumo/Sirius_ear/install/local_setup.zsh'
+[4.853s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/udezumo/Sirius_ear/install/setup.zsh'
