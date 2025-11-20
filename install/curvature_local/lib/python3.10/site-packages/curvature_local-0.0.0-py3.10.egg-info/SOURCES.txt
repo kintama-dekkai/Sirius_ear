@@ -9,6 +9,7 @@ setup.py
 ../../build/curvature_local/curvature_local.egg-info/top_level.txt
 ../../build/curvature_local/curvature_local.egg-info/zip-safe
 curvature_local/__init__.py
+curvature_local/curvature_local_all.py
 curvature_local/curvature_local_defalt.py
 curvature_local/curvature_local_end.py
 curvature_local/curvature_local_node.py

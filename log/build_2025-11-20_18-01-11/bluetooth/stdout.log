@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/bluetooth/bluetooth.egg-info/PKG-INFO
+writing dependency_links to ../../build/bluetooth/bluetooth.egg-info/dependency_links.txt
+writing entry points to ../../build/bluetooth/bluetooth.egg-info/entry_points.txt
+writing requirements to ../../build/bluetooth/bluetooth.egg-info/requires.txt
+writing top-level names to ../../build/bluetooth/bluetooth.egg-info/top_level.txt
+reading manifest file '../../build/bluetooth/bluetooth.egg-info/SOURCES.txt'
+writing manifest file '../../build/bluetooth/bluetooth.egg-info/SOURCES.txt'
+running build
+running build_py
+copying bluetooth/bluetooth_node.py -> /home/udezumo/Sirius_ear/build/bluetooth/build/lib/bluetooth
+running install
+running install_lib
+copying /home/udezumo/Sirius_ear/build/bluetooth/build/lib/bluetooth/bluetooth_node.py -> /home/udezumo/Sirius_ear/install/bluetooth/lib/python3.10/site-packages/bluetooth
+byte-compiling /home/udezumo/Sirius_ear/install/bluetooth/lib/python3.10/site-packages/bluetooth/bluetooth_node.py to bluetooth_node.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/udezumo/Sirius_ear/install/bluetooth/lib/python3.10/site-packages/bluetooth-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/bluetooth/bluetooth.egg-info to /home/udezumo/Sirius_ear/install/bluetooth/lib/python3.10/site-packages/bluetooth-0.0.0-py3.10.egg-info
+running install_scripts
+Installing bluetooth_node script to /home/udezumo/Sirius_ear/install/bluetooth/lib/bluetooth
+writing list of installed files to '/home/udezumo/Sirius_ear/build/bluetooth/install.log'

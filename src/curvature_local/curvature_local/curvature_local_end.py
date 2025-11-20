@@ -12,6 +12,7 @@ class Curvature_local(Node):
        self.turn_signal_pub = self.create_publisher(String,'/blinker_led_command',10)
 
        self.get_logger().info('turnsignal, curvature, len')
+       self.angular_curvature = 1.0
 
 
    def curvature_from_three_points(self,p1, p2, p3):

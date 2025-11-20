@@ -7,11 +7,15 @@ from std_msgs.msg import String
 
 class Curvature_local(Node):
    def __init__(self):
-       super().__init__('Curvature_local')
-       self.sub1 = self.create_subscription(Path ,'/local_plan',self.local_plan_cb,10)
-       self.turn_signal_pub = self.create_publisher(String,'/blinker_led_command',10)
+      super().__init__('Curvature_local')
+      self.sub1 = self.create_subscription(Path ,'/local_plan',self.local_plan_cb,10)
+      self.turn_signal_pub = self.create_publisher(String,'/blinker_led_command',10)
 
-       self.get_logger().info('turnsignal, curvature, len')
+      self.angular_curvature = 1.0
+      self.a = 0.7
+      self.k_smooth = 0.0
+
+      self.get_logger().info('turnsignal, curvature, len')
 
 
    def curvature_from_three_points(self,pose_stamped):
@@ -24,7 +28,7 @@ class Curvature_local(Node):
          (x1,y1) = pose_stamped[i].pose.position.x, pose_stamped[i].pose.position.y
          (x2,y2) = pose_stamped[i+1].pose.position.x, pose_stamped[i+1].pose.position.y
          (x3,y3) = pose_stamped[i+2].pose.position.x, pose_stamped[i+2].pose.position.y
-         pose_stamped[i+1], pose_stamped[-1]
+         
          area = 0.5 * abs(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2))
          if area > max_area:
             a = math.hypot(x2-x1, y2-y1)
@@ -38,7 +42,7 @@ class Curvature_local(Node):
             cross = v1x * v2y - v1y * v2x
             if k == 0:
                continue
-            unko.append(math.copysign(int(k * 100),cross))
+            unko.append(math.copysign(int(k * 1000), cross))
       self.get_logger().info(f'{unko}')
       return math.copysign(k, cross)
 
@@ -46,17 +50,20 @@ class Curvature_local(Node):
    def local_plan_cb(self,msg:Path):
         if len(msg.poses) < 3:
            return
+        
         pose_stamped = msg.poses
-        k = self.curvature_from_three_points(pose_stamped)
+        self.k_new = self.curvature_from_three_points(pose_stamped)
+        self.k_smooth = self.a * self.k_new + (1 - self.a) * self.k_smooth
         turn_signal = String()
-        if k > 0.5:
+
+        if self.k_smooth > self.angular_curvature:
            turn_signal.data = 'left'
-        elif k < -0.5:
+        elif self.k_smooth < -self.angular_curvature:
            turn_signal.data = 'right'
         else:
            turn_signal.data = 'straight'
         self.turn_signal_pub.publish(turn_signal)
-        self.get_logger().info(f'{turn_signal.data}, {k}, {len(msg.poses)}')
+        self.get_logger().info(f'{turn_signal.data}, {self.k_smooth}, {len(msg.poses)}')
 
 
 def main(args=None):

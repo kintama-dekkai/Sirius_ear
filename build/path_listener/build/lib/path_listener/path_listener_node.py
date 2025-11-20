@@ -1,20 +1,19 @@
 import rclpy
 import math
 from rclpy.node import Node
-from visualization_msgs.msg import MarkerArray
+from nav_msgs.msg import Path
 from std_msgs.msg import String
 
 
 class PathListener(Node):
     def __init__(self):
         super().__init__('path_listener')
-        self.sub1 = self.create_subscription(MarkerArray,'/trajectories',self.local_plan_cb,10)
+        self.sub1 = self.create_subscription(Path,'/optimal_trajectory',self.local_plan_cb,10)
         self.turn_signal_pub = self.create_publisher(String,'/blinker_led_command',10)
         
         self.angular_threshold = 20 #degの閾値
         self.last_pub = None
         self.get_logger().info('num_points:compersion_deg:string')
-        self.get_logger().info('trajectoriesBA-JON222')
 
     
     def angle_diff(self,a, b):  #2つの角度a,b[deg]の差を[-180,180]の範囲で返す
@@ -40,29 +39,15 @@ class PathListener(Node):
         self.turn_signal_pub.publish(msg)
 
     
-    def local_plan_cb(self,msg:MarkerArray):
-        # MarkerArrayからMarkerを取得
-        if len(msg.markers) == 0:
-            return
-        
-        # 最初のMarkerのpointsを使用
-        marker = msg.markers[0]
-        num_points = len(marker.points)
-        
+    def local_plan_cb(self,msg:Path):
+        num_points = len(msg.poses)
         if num_points < 2: #点が少ないときは無視
             return
 
-        # 始点と終点の位置から角度を計算
-        start_point = marker.points[0]
-        end_point = marker.points[-1]
-        
-        # ベクトルの角度を計算
-        dx = end_point.x - start_point.x
-        dy = end_point.y - start_point.y
-        
-        # 始点から終点への方向角度
-        angle_rad = math.atan2(dy, dx)
-        comparsion_deg = math.degrees(angle_rad)
+        start_deg = self.deg(msg.poses[0])
+        end_deg = self.deg(msg.poses[-1])
+
+        comparsion_deg = self.angle_diff(end_deg,start_deg)
 
         if comparsion_deg > self.angular_threshold:
             string = 'left'
@@ -74,6 +59,9 @@ class PathListener(Node):
         self.pub(string)
         self.get_logger().info(f'{num_points} : {comparsion_deg:.1f} : {string}')
 
+         
+
+
 
 def main(args=None):
     rclpy.init(args=args)
@@ -84,4 +72,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-    
+

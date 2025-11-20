@@ -14,7 +14,6 @@ class BLEControlNode(Node):
     def __init__(self):
         super().__init__('ble_control_node')
         self.blinker = self.create_subscription(String,'/blinker_led_command',self.blinker_cb,10)
-        self.led_command_sub = self.create_subscription(String, '/led_command', self.command_callback, 10)
         self.stop_sub = self.create_subscription(Bool,'/stop',self.stop_cb,1)
 
         self.left_command = None
@@ -49,12 +48,6 @@ class BLEControlNode(Node):
             self.left_command ="M:1"
             self.right_command = "M:1"
             self.blinking_mode = False
-
-    
-    def command_callback(self):
-        return
-
-
 
 
     def stop_cb(self,msg:Bool):
