@@ -8,7 +8,7 @@ from std_msgs.msg import String
 class PathListener(Node):
     def __init__(self):
         super().__init__('path_listener')
-        self.sub1 = self.create_subscription(Path,'/trajectories',self.local_plan_cb,10)
+        self.sub1 = self.create_subscription(Path,'/local_plan',self.local_plan_cb,10)
         self.turn_signal_pub = self.create_publisher(String,'/led_command',10)
  
         self.angular_threshold = 20 #degの閾値

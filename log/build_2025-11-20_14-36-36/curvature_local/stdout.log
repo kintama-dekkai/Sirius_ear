@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/curvature_local/curvature_local.egg-info/PKG-INFO
+writing dependency_links to ../../build/curvature_local/curvature_local.egg-info/dependency_links.txt
+writing entry points to ../../build/curvature_local/curvature_local.egg-info/entry_points.txt
+writing requirements to ../../build/curvature_local/curvature_local.egg-info/requires.txt
+writing top-level names to ../../build/curvature_local/curvature_local.egg-info/top_level.txt
+reading manifest file '../../build/curvature_local/curvature_local.egg-info/SOURCES.txt'
+writing manifest file '../../build/curvature_local/curvature_local.egg-info/SOURCES.txt'
+running build
+running build_py
+copying curvature_local/curvature_local_node.py -> /home/udezumo/Sirius_ear/build/curvature_local/build/lib/curvature_local
+copying curvature_local/curvature_local_end.py -> /home/udezumo/Sirius_ear/build/curvature_local/build/lib/curvature_local
+copying curvature_local/curvature_local_side_lock.py -> /home/udezumo/Sirius_ear/build/curvature_local/build/lib/curvature_local
+running install
+running install_lib
+copying /home/udezumo/Sirius_ear/build/curvature_local/build/lib/curvature_local/curvature_local_node.py -> /home/udezumo/Sirius_ear/install/curvature_local/lib/python3.10/site-packages/curvature_local
+copying /home/udezumo/Sirius_ear/build/curvature_local/build/lib/curvature_local/curvature_local_end.py -> /home/udezumo/Sirius_ear/install/curvature_local/lib/python3.10/site-packages/curvature_local
+copying /home/udezumo/Sirius_ear/build/curvature_local/build/lib/curvature_local/curvature_local_side_lock.py -> /home/udezumo/Sirius_ear/install/curvature_local/lib/python3.10/site-packages/curvature_local
+byte-compiling /home/udezumo/Sirius_ear/install/curvature_local/lib/python3.10/site-packages/curvature_local/curvature_local_node.py to curvature_local_node.cpython-310.pyc
+byte-compiling /home/udezumo/Sirius_ear/install/curvature_local/lib/python3.10/site-packages/curvature_local/curvature_local_end.py to curvature_local_end.cpython-310.pyc
+byte-compiling /home/udezumo/Sirius_ear/install/curvature_local/lib/python3.10/site-packages/curvature_local/curvature_local_side_lock.py to curvature_local_side_lock.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/udezumo/Sirius_ear/install/curvature_local/lib/python3.10/site-packages/curvature_local-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/curvature_local/curvature_local.egg-info to /home/udezumo/Sirius_ear/install/curvature_local/lib/python3.10/site-packages/curvature_local-0.0.0-py3.10.egg-info
+running install_scripts
+Installing curvature_local_node script to /home/udezumo/Sirius_ear/install/curvature_local/lib/curvature_local
+writing list of installed files to '/home/udezumo/Sirius_ear/build/curvature_local/install.log'
