@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/curvature/curvature.egg-info/PKG-INFO
+writing dependency_links to ../../build/curvature/curvature.egg-info/dependency_links.txt
+writing entry points to ../../build/curvature/curvature.egg-info/entry_points.txt
+writing requirements to ../../build/curvature/curvature.egg-info/requires.txt
+writing top-level names to ../../build/curvature/curvature.egg-info/top_level.txt
+reading manifest file '../../build/curvature/curvature.egg-info/SOURCES.txt'
+writing manifest file '../../build/curvature/curvature.egg-info/SOURCES.txt'
+running build
+running build_py
+copying curvature/curvature_node.py -> /home/udezumo/Sirius_ear/build/curvature/build/lib/curvature
+running install
+running install_lib
+copying /home/udezumo/Sirius_ear/build/curvature/build/lib/curvature/curvature_node.py -> /home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages/curvature
+byte-compiling /home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages/curvature/curvature_node.py to curvature_node.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages/curvature-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/curvature/curvature.egg-info to /home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages/curvature-0.0.0-py3.10.egg-info
+running install_scripts
+Installing curvature_node script to /home/udezumo/Sirius_ear/install/curvature/lib/curvature
+writing list of installed files to '/home/udezumo/Sirius_ear/build/curvature/install.log'

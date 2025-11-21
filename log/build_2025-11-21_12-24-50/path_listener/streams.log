@@ -1,0 +1,21 @@
+[2.786s] Invoking command in '/home/udezumo/Sirius_ear/src/path_listener': PYTHONPATH=/home/udezumo/Sirius_ear/build/path_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_listener build --build-base /home/udezumo/Sirius_ear/build/path_listener/build install --record /home/udezumo/Sirius_ear/build/path_listener/install.log --single-version-externally-managed install_data
+[3.403s] running egg_info
+[3.407s] writing ../../build/path_listener/path_listener.egg-info/PKG-INFO
+[3.408s] writing dependency_links to ../../build/path_listener/path_listener.egg-info/dependency_links.txt
+[3.408s] writing entry points to ../../build/path_listener/path_listener.egg-info/entry_points.txt
+[3.408s] writing requirements to ../../build/path_listener/path_listener.egg-info/requires.txt
+[3.408s] writing top-level names to ../../build/path_listener/path_listener.egg-info/top_level.txt
+[3.414s] reading manifest file '../../build/path_listener/path_listener.egg-info/SOURCES.txt'
+[3.416s] writing manifest file '../../build/path_listener/path_listener.egg-info/SOURCES.txt'
+[3.416s] running build
+[3.416s] running build_py
+[3.418s] running install
+[3.418s] running install_lib
+[3.426s] running install_data
+[3.427s] running install_egg_info
+[3.427s] removing '/home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener-0.0.0-py3.10.egg-info' (and everything under it)
+[3.427s] Copying ../../build/path_listener/path_listener.egg-info to /home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages/path_listener-0.0.0-py3.10.egg-info
+[3.430s] running install_scripts
+[3.493s] Installing path_listener_node script to /home/udezumo/Sirius_ear/install/path_listener/lib/path_listener
+[3.496s] writing list of installed files to '/home/udezumo/Sirius_ear/build/path_listener/install.log'
+[3.639s] Invoked command in '/home/udezumo/Sirius_ear/src/path_listener' returned '0': PYTHONPATH=/home/udezumo/Sirius_ear/build/path_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/path_listener/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_listener build --build-base /home/udezumo/Sirius_ear/build/path_listener/build install --record /home/udezumo/Sirius_ear/build/path_listener/install.log --single-version-externally-managed install_data

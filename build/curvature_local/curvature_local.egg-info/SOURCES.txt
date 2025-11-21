@@ -12,6 +12,7 @@ curvature_local/__init__.py
 curvature_local/curvature_local_all.py
 curvature_local/curvature_local_defalt.py
 curvature_local/curvature_local_end.py
+curvature_local/curvature_local_gpt.py
 curvature_local/curvature_local_node.py
 curvature_local/curvature_local_side_lock.py
 resource/curvature_local

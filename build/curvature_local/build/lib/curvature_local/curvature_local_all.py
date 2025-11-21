@@ -25,7 +25,7 @@ class Curvature_local(Node):
          (x1,y1) = pose_stamped[i].pose.position.x, pose_stamped[i].pose.position.y
          (x2,y2) = pose_stamped[i+1].pose.position.x, pose_stamped[i+1].pose.position.y
          (x3,y3) = pose_stamped[i+2].pose.position.x, pose_stamped[i+2].pose.position.y
-         pose_stamped[i+1], pose_stamped[-1]
+         
          area = 0.5 * abs(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2))
          if area > max_area:
             a = math.hypot(x2-x1, y2-y1)

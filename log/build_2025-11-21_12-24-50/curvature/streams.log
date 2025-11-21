@@ -1,0 +1,24 @@
+[2.786s] Invoking command in '/home/udezumo/Sirius_ear/src/curvature': PYTHONPATH=/home/udezumo/Sirius_ear/build/curvature/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/curvature build --build-base /home/udezumo/Sirius_ear/build/curvature/build install --record /home/udezumo/Sirius_ear/build/curvature/install.log --single-version-externally-managed install_data
+[3.383s] running egg_info
+[3.386s] writing ../../build/curvature/curvature.egg-info/PKG-INFO
+[3.386s] writing dependency_links to ../../build/curvature/curvature.egg-info/dependency_links.txt
+[3.387s] writing entry points to ../../build/curvature/curvature.egg-info/entry_points.txt
+[3.387s] writing requirements to ../../build/curvature/curvature.egg-info/requires.txt
+[3.388s] writing top-level names to ../../build/curvature/curvature.egg-info/top_level.txt
+[3.390s] reading manifest file '../../build/curvature/curvature.egg-info/SOURCES.txt'
+[3.390s] writing manifest file '../../build/curvature/curvature.egg-info/SOURCES.txt'
+[3.390s] running build
+[3.390s] running build_py
+[3.390s] copying curvature/curvature_node.py -> /home/udezumo/Sirius_ear/build/curvature/build/lib/curvature
+[3.391s] running install
+[3.392s] running install_lib
+[3.396s] copying /home/udezumo/Sirius_ear/build/curvature/build/lib/curvature/curvature_node.py -> /home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages/curvature
+[3.398s] byte-compiling /home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages/curvature/curvature_node.py to curvature_node.cpython-310.pyc
+[3.399s] running install_data
+[3.399s] running install_egg_info
+[3.403s] removing '/home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages/curvature-0.0.0-py3.10.egg-info' (and everything under it)
+[3.405s] Copying ../../build/curvature/curvature.egg-info to /home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages/curvature-0.0.0-py3.10.egg-info
+[3.405s] running install_scripts
+[3.449s] Installing curvature_node script to /home/udezumo/Sirius_ear/install/curvature/lib/curvature
+[3.449s] writing list of installed files to '/home/udezumo/Sirius_ear/build/curvature/install.log'
+[3.535s] Invoked command in '/home/udezumo/Sirius_ear/src/curvature' returned '0': PYTHONPATH=/home/udezumo/Sirius_ear/build/curvature/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/udezumo/Sirius_ear/install/curvature/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/curvature build --build-base /home/udezumo/Sirius_ear/build/curvature/build install --record /home/udezumo/Sirius_ear/build/curvature/install.log --single-version-externally-managed install_data
