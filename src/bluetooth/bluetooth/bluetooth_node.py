@@ -44,6 +44,10 @@ class BLEControlNode(Node):
             self.left_command = "C:0,0,0"
             self.right_command = "C:255,255,0"
             self.blinking_mode = True
+        elif msg.data == 'turning':
+            self.left_command = "C:255,255,0"
+            self.right_command = "C:255,255,0"
+            self.blinking_mode = True
         else:
             self.left_command ="M:1"
             self.right_command = "M:1"
@@ -81,9 +85,11 @@ class BLEControlNode(Node):
                 asyncio.run_coroutine_threadsafe(self.left_client.write_gatt_char(CHAR_UUID, 'C:255,0,0'.encode('utf-8')),self.loop)
                 asyncio.run_coroutine_threadsafe(self.right_client.write_gatt_char(CHAR_UUID, 'C:255,0,0'.encode('utf-8')),self.loop)
                 return
+            
             if self.left_command is None or self.right_command is None:
                 self.get_logger().info("贈り物がないあめ二ダ")
                 return
+            
             if not self.blinking_mode or self.last:
                 asyncio.run_coroutine_threadsafe(self.left_client.write_gatt_char(CHAR_UUID, self.left_command.encode('utf-8')),self.loop)
                 asyncio.run_coroutine_threadsafe(self.right_client.write_gatt_char(CHAR_UUID, self.right_command.encode('utf-8')),self.loop)

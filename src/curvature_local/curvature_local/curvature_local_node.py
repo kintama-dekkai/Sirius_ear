@@ -56,7 +56,6 @@ class Curvature_local(Node):
             self.led_signal.data = 'turninng'
          else:
             self.led_signal.data = 'straight'
-      
       else:
          pose_stamped = msg.poses
          self.k_new = self.curvature_from_three_points(pose_stamped)
